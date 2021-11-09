@@ -4,6 +4,9 @@ if (process.env.NODE_ENV === "production") {
       autoprefixer: {},
       cssnano: {},
       "rucksack-css": {},
+      "postcss-preset-env": {
+        browsers: "last 2 versions",
+      },
     },
   };
 } else {
@@ -11,6 +14,9 @@ if (process.env.NODE_ENV === "production") {
     plugins: {
       autoprefixer: {},
       "rucksack-css": {},
+      "postcss-preset-env": {
+        browsers: "last 2 versions",
+      },
     },
   };
 }
